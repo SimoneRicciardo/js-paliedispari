@@ -1,10 +1,7 @@
 let parolaUtente = prompt('inserisci parola');
 
-
 function parolaPal (parola){
-
-    let reverseWord = parola.split('').reverse();
-
+    let reverseWord = parola.split('').reverse().join();
     return reverseWord;
 }
 
@@ -15,5 +12,4 @@ if(parolaUtente == parolaContr){
 
 } else {
     alert('parola NON palindroma');
-
 }
